@@ -1,9 +1,9 @@
 public class MainApplication {
 
     // public static void main - this is the entry point of the program
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
 
-        // priting to screen
+        // printing to screen
         System.out.println("HTML");
         System.out.println("CSS");
 
