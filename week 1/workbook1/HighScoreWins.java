@@ -14,7 +14,7 @@ public class HighScoreWins {
         score1 = userInput[2];
         score2 = userInput[3];
 
-        if ((Integer.parseInt(score1) > Integer.parseInt(score2))) {
+        if (Integer.parseInt(score1) > Integer.parseInt(score2)) {
             winner = team1;
         } else {
             winner = team2;
