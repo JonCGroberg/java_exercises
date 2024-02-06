@@ -1,20 +1,21 @@
 package com.pluralsight;
 
-public class HotelApplication
-{
-    public static void main(String[] args)
-    {
+public class HotelApplication {
+    public static void main(String[] args) {
         /************************
          EXERCISE 1
-        *************************/
+         *************************/
 
         /* ROOM TESTS */
         // create a room that is clean and unoccupied
         // verify that it IS available
+        Room cleanRoom = new Room(true, false, 1, 18.5f);
+        System.out.println("Clean: " + cleanRoom.isClean() + "\nUnoccupied: " + cleanRoom.isAvailable());
 
         // create a room that is dirty and occupied
         // verify that it IS NOT available
-
+        Room dirtyRoom= new Room(false, true, 1, 18.5f);
+        System.out.println("Clean: " + dirtyRoom.isClean() + "\nUnoccupied: " + dirtyRoom.isAvailable());
 
         /* RESERVATION TESTS */
         // create a reservation for a King room for 2 weekday nights
@@ -38,7 +39,7 @@ public class HotelApplication
 
         /************************
          EXERCISE 2
-        *************************/
+         *************************/
 
         /* ROOM TESTS */
         // create a room that is clean and unoccupied
