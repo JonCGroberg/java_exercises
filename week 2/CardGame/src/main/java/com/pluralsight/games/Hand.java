@@ -43,9 +43,16 @@ public class Hand
     {
         for(Card card: cards)
         {
-            card.flip();
-            System.out.println(card + " ");
-            card.flip();
+            if(!card.isFaceUp()) card.flip();
         }
+    }
+    public void hideHand(){
+        for (Card card: cards){
+            if(card.isFaceUp()) card.flip();
+        }
+    }
+    @Override
+    public String toString() {
+       return cards.toString();
     }
 }
