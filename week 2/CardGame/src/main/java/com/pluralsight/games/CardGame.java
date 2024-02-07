@@ -26,8 +26,10 @@ public class CardGame {
         int highestScore = 0;
         Hand highestHand = null;
         for (Hand hand : players) {
-            if (highestScore < hand.getValue()) {
+            int handValue = hand.getValue();
+            if (highestScore < handValue && handValue <= 21) {
                 highestHand = hand;
+                highestScore = handValue;
             }
         }
 
