@@ -28,6 +28,7 @@ public class CardGame {
         System.out.println("----- The Winner is! ----");
         int highestScore = 0;
         Hand highestHand = null;
+
         for (Hand hand : players) {
             int handValue = hand.getValue();
             if (highestScore < handValue && handValue <= 21) {
