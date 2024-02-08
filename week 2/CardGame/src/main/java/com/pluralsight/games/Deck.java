@@ -29,7 +29,7 @@ public class Deck {
 	 */
 	public Card deal() {
 		if (size() != 0) {
-			return listOfCards.remove(0);
+			return listOfCards.removeFirst();
 		} else {
 			return null;
 		}
